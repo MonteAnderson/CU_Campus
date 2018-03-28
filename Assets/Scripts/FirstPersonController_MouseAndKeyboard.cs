@@ -7,7 +7,17 @@ public class FirstPersonController_MouseAndKeyboard : MonoBehaviour {
     public Rigidbody characterController_RigidBody;
     public GameObject cameraLook;
     public float walkspeed = 2;
-
+    public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
+    public RotationAxes axes = RotationAxes.MouseXAndY;
+    public float sensitivityX = 5F;
+    public float sensitivityY = 5F;
+    public float minimumX = -360F;
+    public float maximumX = 360F;
+    public float minimumY = -60F;
+    public float maximumY = 60F;
+    float rotationX = 0F;
+    float rotationY = 0F;
+    Quaternion originalRotation;
     // Use this for initialization
     void Start () {
 
@@ -17,7 +27,8 @@ public class FirstPersonController_MouseAndKeyboard : MonoBehaviour {
 	void Update () {
         Vector3 xyForward = new Vector3(cameraLook.transform.forward.x, 0, cameraLook.transform.forward.z);
         Vector3 negxyForward = new Vector3(-cameraLook.transform.forward.x, 0, -cameraLook.transform.forward.z);
-        float horizontal = Input.GetAxis("Mouse X") * 4;
+
+        //cameraLook.transform.Rotate(Input.mousePosition("X"));
 
         if (Input.GetKey(KeyCode.W))
         {
