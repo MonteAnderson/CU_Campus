@@ -84,6 +84,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Custom\Scripts\FirstPersonController_MouseAndKeyboard.cs" />
+    <Compile Include="Assets\Custom\Scripts\SimpleSmoothMouseLook.cs" />
+    <Compile Include="Assets\Custom\Scripts\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Custom\Scripts\testScript.cs" />
+    <Compile Include="Assets\Custom\Scripts\textToBook.cs" />
     <Compile Include="Assets\MicroSplat\Core\Scripts\MicroSplatPropData.cs" />
     <Compile Include="Assets\MicroSplat\Core\Scripts\MicroSplatRuntimeUtil.cs" />
     <Compile Include="Assets\MicroSplat\Core\Scripts\MicroSplatTerrain.cs" />
@@ -326,12 +331,9 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\Scripts\FirstPersonController_MouseAndKeyboard.cs" />
-    <Compile Include="Assets\Scripts\SimpleSmoothMouseLook.cs" />
-    <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
-    <Compile Include="Assets\Scripts\testScript.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Custom\Text Files\test_book_1.txt" />
     <None Include="Assets\LICENSE.txt" />
     <None Include="Assets\MicroSplat\Core\Examples\Scene\MicroSplatData\MicroSplat.shader" />
     <None Include="Assets\MicroSplat\Core\Examples\Scene\MicroSplatData\MicroSplat_Base.shader" />
