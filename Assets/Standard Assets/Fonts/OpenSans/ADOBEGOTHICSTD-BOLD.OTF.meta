@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e453701756b7c334f9321fe7405e594b
+timeCreated: 1524328260
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 0
+  fontName: Adobe Gothic Std
+  fontNames:
+  - Adobe Gothic Std
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

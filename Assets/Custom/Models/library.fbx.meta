@@ -25,6 +25,14 @@ ModelImporter:
     100034: fox_body0_model0_MeshPart1
     100036: fox_body0_model0_MeshPart2
     100038: //RootNode
+    100040: Cube.011
+    100042: Cube.015
+    100044: Cube.016
+    100046: Cube.017
+    100048: Cube.019
+    100050: Cube.020
+    100052: Cube.021
+    100054: Cube.023
     400000: Cube
     400002: Cube.001
     400004: Cube.002
@@ -45,6 +53,14 @@ ModelImporter:
     400034: fox_body0_model0_MeshPart1
     400036: fox_body0_model0_MeshPart2
     400038: //RootNode
+    400040: Cube.011
+    400042: Cube.015
+    400044: Cube.016
+    400046: Cube.017
+    400048: Cube.019
+    400050: Cube.020
+    400052: Cube.021
+    400054: Cube.023
     2300000: Cube
     2300002: Cube.001
     2300004: Cube.002
@@ -63,6 +79,14 @@ ModelImporter:
     2300030: fox_body0_model0_MeshPart0
     2300032: fox_body0_model0_MeshPart1
     2300034: fox_body0_model0_MeshPart2
+    2300036: Cube.011
+    2300038: Cube.015
+    2300040: Cube.016
+    2300042: Cube.017
+    2300044: Cube.019
+    2300046: Cube.020
+    2300048: Cube.021
+    2300050: Cube.023
     3300000: Cube
     3300002: Cube.001
     3300004: Cube.002
@@ -81,6 +105,14 @@ ModelImporter:
     3300030: fox_body0_model0_MeshPart0
     3300032: fox_body0_model0_MeshPart1
     3300034: fox_body0_model0_MeshPart2
+    3300036: Cube.011
+    3300038: Cube.015
+    3300040: Cube.016
+    3300042: Cube.017
+    3300044: Cube.019
+    3300046: Cube.020
+    3300048: Cube.021
+    3300050: Cube.023
     4300000: fox_body0_model0_MeshPart0
     4300002: fox_body0_model0_MeshPart1
     4300004: fox_body0_model0_MeshPart2
@@ -99,6 +131,14 @@ ModelImporter:
     4300030: Cube.008
     4300032: Cube.018
     4300034: Cube.010
+    4300036: Cube.011
+    4300038: Cube.015
+    4300040: Cube.019
+    4300042: Cube.017
+    4300044: Cube.016
+    4300046: Cube.020
+    4300048: Cube.021
+    4300050: Cube.023
   materials:
     importMaterials: 1
     materialName: 0
