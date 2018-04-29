@@ -37,7 +37,7 @@ public class PlayerLook : MonoBehaviour {
             Debug.Log(bookURL);
 
             currentLookAtGameObject = hit.transform.gameObject;
-            playerCanvasText.text = "Interact to read " + currentLookAtGameObject.GetComponent<textToBook>().book_content.name;
+            playerCanvasText.text = "Interact to read '" + currentLookAtGameObject.GetComponent<textToBook>().book_name + "'";
 
             //bookURL = currentLookAtGameObject.GetComponent<PlayerLook>().bookURL;
             //Debug.Log(bookURL);
@@ -53,7 +53,7 @@ public class PlayerLook : MonoBehaviour {
 
         if ((Input.GetKeyDown(KeyCode.E)) || (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger)))
         {
-            Application.OpenURL(currentLookAtGameObject.GetComponent<textToBook>().book_content.text);
+            Application.OpenURL(currentLookAtGameObject.GetComponent<textToBook>().book_url);
         }
 
 

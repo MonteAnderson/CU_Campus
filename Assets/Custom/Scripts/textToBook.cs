@@ -6,19 +6,22 @@ public class textToBook : MonoBehaviour {
 
     public TextMesh book_title;
     public TextAsset book_content;
+    public string book_name;
+    public string book_url;
     public string book_category;
     public Color book_color;
     public GameObject book;
     Material book_mat;
 
-    private string book_url;
+
     private int i = 0;
 
 	// Use this for initialization
 	void Start () {
+        book_title.text = book_name;
         book_mat = GetComponent<Renderer>().material;
-        book_title.text = book_content.name;
-        book_url = book_content.text;
+        //book_title.text = book_content.name;
+        //book_url = book_content.text;
 
         if (book_category == "nature")
         {

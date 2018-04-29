@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: 97ff04dab42ca894c97d78dd1a7e3096
+timeCreated: 1525021629
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube
+    100004: Cube.001
+    100006: Cube.002
+    100008: Cube.003
+    100010: Cube.004
+    100012: Cube.005
+    100014: Cube.006
+    100016: Cube.007
+    100018: Cube.008
+    100020: Cube.009
+    100022: Cube.010
+    100024: Cube.011
+    100026: Cube.012
+    100028: Cube.013
+    100030: Cube.014
+    100032: Cube.015
+    100034: Cube.016
+    100036: Cube.017
+    100038: Cube.018
+    100040: Cube.019
+    100042: Cube.020
+    100044: Cube.021
+    100046: Cube.022
+    100048: Cube.023
+    100050: Cube.024
+    100052: Cube.025
+    100054: Cube.026
+    100056: Cube.027
+    100058: Cube.028
+    100060: Cube.029
+    100062: Cube.030
+    100064: Cube.031
+    100066: Cube.032
+    100068: Cube.033
+    100070: Cube.034
+    100072: Cube.035
+    100074: Cube.036
+    100076: Cube.037
+    100078: Cube.038
+    100080: Cube.039
+    100082: Cube.040
+    100084: Cube.041
+    100086: Cube.042
+    100088: Cube.043
+    100090: Cube.044
+    100092: Cube.045
+    100094: Cube.046
+    100096: Cube.047
+    100098: Cube.048
+    100100: Cube.049
+    100102: Cube.050
+    100104: Cube.051
+    100106: Cube.052
+    100108: Cube.053
+    100110: Cube.054
+    100112: Cube.055
+    100114: male_02_reference_skeleton
+    100116: male_02_reference_skeleton.001
+    100118: Plane
+    100120: Plane.001
+    100122: Plane.002
+    100124: Plane.003
+    100126: Plane.004
+    100128: Plane.005
+    100130: Plane.006
+    100132: Plane.007
+    100134: Plane.008
+    100136: Plane.009
+    100138: Plane.010
+    100140: Plane.011
+    100142: Plane.012
+    100144: Plane.013
+    100146: Plane.014
+    100148: Plane.015
+    100150: Sun
+    100152: ValveBiped.Anim_Attachment_LH
+    100154: ValveBiped.Anim_Attachment_LH 1
+    100156: ValveBiped.Anim_Attachment_LH_end
+    100158: ValveBiped.Anim_Attachment_LH_end 1
+    100160: ValveBiped.Anim_Attachment_RH
+    100162: ValveBiped.Anim_Attachment_RH 1
+    100164: ValveBiped.Anim_Attachment_RH_end
+    100166: ValveBiped.Anim_Attachment_RH_end 1
+    100168: ValveBiped.Bip01_Head1
+    100170: ValveBiped.Bip01_Head1 1
+    100172: ValveBiped.Bip01_L_Calf
+    100174: ValveBiped.Bip01_L_Calf 1
+    100176: ValveBiped.Bip01_L_Clavicle
+    100178: ValveBiped.Bip01_L_Clavicle 1
+    100180: ValveBiped.Bip01_L_Finger0
+    100182: ValveBiped.Bip01_L_Finger0 1
+    100184: ValveBiped.Bip01_L_Finger01
+    100186: ValveBiped.Bip01_L_Finger01 1
+    100188: ValveBiped.Bip01_L_Finger02
+    100190: ValveBiped.Bip01_L_Finger02 1
+    100192: ValveBiped.Bip01_L_Finger02_end
+    100194: ValveBiped.Bip01_L_Finger02_end 1
+    100196: ValveBiped.Bip01_L_Finger1
+    100198: ValveBiped.Bip01_L_Finger1 1
+    100200: ValveBiped.Bip01_L_Finger11
+    100202: ValveBiped.Bip01_L_Finger11 1
+    100204: ValveBiped.Bip01_L_Finger12
+    100206: ValveBiped.Bip01_L_Finger12 1
+    100208: ValveBiped.Bip01_L_Finger12_end
+    100210: ValveBiped.Bip01_L_Finger12_end 1
+    100212: ValveBiped.Bip01_L_Finger2
+    100214: ValveBiped.Bip01_L_Finger2 1
+    100216: ValveBiped.Bip01_L_Finger21
+    100218: ValveBiped.Bip01_L_Finger21 1
+    100220: ValveBiped.Bip01_L_Finger22
+    100222: ValveBiped.Bip01_L_Finger22 1
+    100224: ValveBiped.Bip01_L_Finger22_end
+    100226: ValveBiped.Bip01_L_Finger22_end 1
+    100228: ValveBiped.Bip01_L_Finger3
+    100230: ValveBiped.Bip01_L_Finger3 1
+    100232: ValveBiped.Bip01_L_Finger31
+    100234: ValveBiped.Bip01_L_Finger31 1
+    100236: ValveBiped.Bip01_L_Finger32
+    100238: ValveBiped.Bip01_L_Finger32 1
+    100240: ValveBiped.Bip01_L_Finger32_end
+    100242: ValveBiped.Bip01_L_Finger32_end 1
+    100244: ValveBiped.Bip01_L_Finger4
+    100246: ValveBiped.Bip01_L_Finger4 1
+    100248: ValveBiped.Bip01_L_Finger41
+    100250: ValveBiped.Bip01_L_Finger41 1
+    100252: ValveBiped.Bip01_L_Finger42
+    100254: ValveBiped.Bip01_L_Finger42 1
+    100256: ValveBiped.Bip01_L_Finger42_end
+    100258: ValveBiped.Bip01_L_Finger42_end 1
+    100260: ValveBiped.Bip01_L_Foot
+    100262: ValveBiped.Bip01_L_Foot 1
+    100264: ValveBiped.Bip01_L_Forearm
+    100266: ValveBiped.Bip01_L_Forearm 1
+    100268: ValveBiped.Bip01_L_Hand
+    100270: ValveBiped.Bip01_L_Hand 1
+    100272: ValveBiped.Bip01_L_Thigh
+    100274: ValveBiped.Bip01_L_Thigh 1
+    100276: ValveBiped.Bip01_L_Toe0
+    100278: ValveBiped.Bip01_L_Toe0 1
+    100280: ValveBiped.Bip01_L_Toe0_end
+    100282: ValveBiped.Bip01_L_Toe0_end 1
+    100284: ValveBiped.Bip01_L_UpperArm
+    100286: ValveBiped.Bip01_L_UpperArm 1
+    100288: ValveBiped.Bip01_L_Wrist
+    100290: ValveBiped.Bip01_L_Wrist 1
+    100292: ValveBiped.Bip01_L_Wrist_end
+    100294: ValveBiped.Bip01_L_Wrist_end 1
+    100296: ValveBiped.Bip01_Neck1
+    100298: ValveBiped.Bip01_Neck1 1
+    100300: ValveBiped.Bip01_Pelvis
+    100302: ValveBiped.Bip01_Pelvis 1
+    100304: ValveBiped.Bip01_R_Calf
+    100306: ValveBiped.Bip01_R_Calf 1
+    100308: ValveBiped.Bip01_R_Clavicle
+    100310: ValveBiped.Bip01_R_Clavicle 1
+    100312: ValveBiped.Bip01_R_Finger0
+    100314: ValveBiped.Bip01_R_Finger0 1
+    100316: ValveBiped.Bip01_R_Finger01
+    100318: ValveBiped.Bip01_R_Finger01 1
+    100320: ValveBiped.Bip01_R_Finger02
+    100322: ValveBiped.Bip01_R_Finger02 1
+    100324: ValveBiped.Bip01_R_Finger02_end
+    100326: ValveBiped.Bip01_R_Finger02_end 1
+    100328: ValveBiped.Bip01_R_Finger1
+    100330: ValveBiped.Bip01_R_Finger1 1
+    100332: ValveBiped.Bip01_R_Finger11
+    100334: ValveBiped.Bip01_R_Finger11 1
+    100336: ValveBiped.Bip01_R_Finger12
+    100338: ValveBiped.Bip01_R_Finger12 1
+    100340: ValveBiped.Bip01_R_Finger12_end
+    100342: ValveBiped.Bip01_R_Finger12_end 1
+    100344: ValveBiped.Bip01_R_Finger2
+    100346: ValveBiped.Bip01_R_Finger2 1
+    100348: ValveBiped.Bip01_R_Finger21
+    100350: ValveBiped.Bip01_R_Finger21 1
+    100352: ValveBiped.Bip01_R_Finger22
+    100354: ValveBiped.Bip01_R_Finger22 1
+    100356: ValveBiped.Bip01_R_Finger22_end
+    100358: ValveBiped.Bip01_R_Finger22_end 1
+    100360: ValveBiped.Bip01_R_Finger3
+    100362: ValveBiped.Bip01_R_Finger3 1
+    100364: ValveBiped.Bip01_R_Finger31
+    100366: ValveBiped.Bip01_R_Finger31 1
+    100368: ValveBiped.Bip01_R_Finger32
+    100370: ValveBiped.Bip01_R_Finger32 1
+    100372: ValveBiped.Bip01_R_Finger32_end
+    100374: ValveBiped.Bip01_R_Finger32_end 1
+    100376: ValveBiped.Bip01_R_Finger4
+    100378: ValveBiped.Bip01_R_Finger4 1
+    100380: ValveBiped.Bip01_R_Finger41
+    100382: ValveBiped.Bip01_R_Finger41 1
+    100384: ValveBiped.Bip01_R_Finger42
+    100386: ValveBiped.Bip01_R_Finger42 1
+    100388: ValveBiped.Bip01_R_Finger42_end
+    100390: ValveBiped.Bip01_R_Finger42_end 1
+    100392: ValveBiped.Bip01_R_Foot
+    100394: ValveBiped.Bip01_R_Foot 1
+    100396: ValveBiped.Bip01_R_Forearm
+    100398: ValveBiped.Bip01_R_Forearm 1
+    100400: ValveBiped.Bip01_R_Hand
+    100402: ValveBiped.Bip01_R_Hand 1
+    100404: ValveBiped.Bip01_R_Thigh
+    100406: ValveBiped.Bip01_R_Thigh 1
+    100408: ValveBiped.Bip01_R_Toe0
+    100410: ValveBiped.Bip01_R_Toe0 1
+    100412: ValveBiped.Bip01_R_Toe0_end
+    100414: ValveBiped.Bip01_R_Toe0_end 1
+    100416: ValveBiped.Bip01_R_UpperArm
+    100418: ValveBiped.Bip01_R_UpperArm 1
+    100420: ValveBiped.Bip01_R_Wrist
+    100422: ValveBiped.Bip01_R_Wrist 1
+    100424: ValveBiped.Bip01_R_Wrist_end
+    100426: ValveBiped.Bip01_R_Wrist_end 1
+    100428: ValveBiped.Bip01_Spine
+    100430: ValveBiped.Bip01_Spine 1
+    100432: ValveBiped.Bip01_Spine1
+    100434: ValveBiped.Bip01_Spine1 1
+    100436: ValveBiped.Bip01_Spine2
+    100438: ValveBiped.Bip01_Spine2 1
+    100440: ValveBiped.Bip01_Spine4
+    100442: ValveBiped.Bip01_Spine4 1
+    100444: ValveBiped.forward
+    100446: ValveBiped.forward 1
+    100448: ValveBiped.forward_end
+    100450: ValveBiped.forward_end 1
+    100452: Cube.056
+    100454: Cube.057
+    100456: Cube.058
+    100458: Cube.059
+    100460: Cube.060
+    100462: Cube.061
+    100464: Cube.062
+    100466: Cube.063
+    100468: Cube.064
+    100470: Cube.065
+    100472: Cube.066
+    100474: Cube.067
+    100476: Cube.068
+    100478: Cube.069
+    100480: Cube.070
+    100482: Cube.071
+    100484: Cube.072
+    100486: Cube.073
+    400000: //RootNode
+    400002: Cube
+    400004: Cube.001
+    400006: Cube.002
+    400008: Cube.003
+    400010: Cube.004
+    400012: Cube.005
+    400014: Cube.006
+    400016: Cube.007
+    400018: Cube.008
+    400020: Cube.009
+    400022: Cube.010
+    400024: Cube.011
+    400026: Cube.012
+    400028: Cube.013
+    400030: Cube.014
+    400032: Cube.015
+    400034: Cube.016
+    400036: Cube.017
+    400038: Cube.018
+    400040: Cube.019
+    400042: Cube.020
+    400044: Cube.021
+    400046: Cube.022
+    400048: Cube.023
+    400050: Cube.024
+    400052: Cube.025
+    400054: Cube.026
+    400056: Cube.027
+    400058: Cube.028
+    400060: Cube.029
+    400062: Cube.030
+    400064: Cube.031
+    400066: Cube.032
+    400068: Cube.033
+    400070: Cube.034
+    400072: Cube.035
+    400074: Cube.036
+    400076: Cube.037
+    400078: Cube.038
+    400080: Cube.039
+    400082: Cube.040
+    400084: Cube.041
+    400086: Cube.042
+    400088: Cube.043
+    400090: Cube.044
+    400092: Cube.045
+    400094: Cube.046
+    400096: Cube.047
+    400098: Cube.048
+    400100: Cube.049
+    400102: Cube.050
+    400104: Cube.051
+    400106: Cube.052
+    400108: Cube.053
+    400110: Cube.054
+    400112: Cube.055
+    400114: male_02_reference_skeleton
+    400116: male_02_reference_skeleton.001
+    400118: Plane
+    400120: Plane.001
+    400122: Plane.002
+    400124: Plane.003
+    400126: Plane.004
+    400128: Plane.005
+    400130: Plane.006
+    400132: Plane.007
+    400134: Plane.008
+    400136: Plane.009
+    400138: Plane.010
+    400140: Plane.011
+    400142: Plane.012
+    400144: Plane.013
+    400146: Plane.014
+    400148: Plane.015
+    400150: Sun
+    400152: ValveBiped.Anim_Attachment_LH
+    400154: ValveBiped.Anim_Attachment_LH 1
+    400156: ValveBiped.Anim_Attachment_LH_end
+    400158: ValveBiped.Anim_Attachment_LH_end 1
+    400160: ValveBiped.Anim_Attachment_RH
+    400162: ValveBiped.Anim_Attachment_RH 1
+    400164: ValveBiped.Anim_Attachment_RH_end
+    400166: ValveBiped.Anim_Attachment_RH_end 1
+    400168: ValveBiped.Bip01_Head1
+    400170: ValveBiped.Bip01_Head1 1
+    400172: ValveBiped.Bip01_L_Calf
+    400174: ValveBiped.Bip01_L_Calf 1
+    400176: ValveBiped.Bip01_L_Clavicle
+    400178: ValveBiped.Bip01_L_Clavicle 1
+    400180: ValveBiped.Bip01_L_Finger0
+    400182: ValveBiped.Bip01_L_Finger0 1
+    400184: ValveBiped.Bip01_L_Finger01
+    400186: ValveBiped.Bip01_L_Finger01 1
+    400188: ValveBiped.Bip01_L_Finger02
+    400190: ValveBiped.Bip01_L_Finger02 1
+    400192: ValveBiped.Bip01_L_Finger02_end
+    400194: ValveBiped.Bip01_L_Finger02_end 1
+    400196: ValveBiped.Bip01_L_Finger1
+    400198: ValveBiped.Bip01_L_Finger1 1
+    400200: ValveBiped.Bip01_L_Finger11
+    400202: ValveBiped.Bip01_L_Finger11 1
+    400204: ValveBiped.Bip01_L_Finger12
+    400206: ValveBiped.Bip01_L_Finger12 1
+    400208: ValveBiped.Bip01_L_Finger12_end
+    400210: ValveBiped.Bip01_L_Finger12_end 1
+    400212: ValveBiped.Bip01_L_Finger2
+    400214: ValveBiped.Bip01_L_Finger2 1
+    400216: ValveBiped.Bip01_L_Finger21
+    400218: ValveBiped.Bip01_L_Finger21 1
+    400220: ValveBiped.Bip01_L_Finger22
+    400222: ValveBiped.Bip01_L_Finger22 1
+    400224: ValveBiped.Bip01_L_Finger22_end
+    400226: ValveBiped.Bip01_L_Finger22_end 1
+    400228: ValveBiped.Bip01_L_Finger3
+    400230: ValveBiped.Bip01_L_Finger3 1
+    400232: ValveBiped.Bip01_L_Finger31
+    400234: ValveBiped.Bip01_L_Finger31 1
+    400236: ValveBiped.Bip01_L_Finger32
+    400238: ValveBiped.Bip01_L_Finger32 1
+    400240: ValveBiped.Bip01_L_Finger32_end
+    400242: ValveBiped.Bip01_L_Finger32_end 1
+    400244: ValveBiped.Bip01_L_Finger4
+    400246: ValveBiped.Bip01_L_Finger4 1
+    400248: ValveBiped.Bip01_L_Finger41
+    400250: ValveBiped.Bip01_L_Finger41 1
+    400252: ValveBiped.Bip01_L_Finger42
+    400254: ValveBiped.Bip01_L_Finger42 1
+    400256: ValveBiped.Bip01_L_Finger42_end
+    400258: ValveBiped.Bip01_L_Finger42_end 1
+    400260: ValveBiped.Bip01_L_Foot
+    400262: ValveBiped.Bip01_L_Foot 1
+    400264: ValveBiped.Bip01_L_Forearm
+    400266: ValveBiped.Bip01_L_Forearm 1
+    400268: ValveBiped.Bip01_L_Hand
+    400270: ValveBiped.Bip01_L_Hand 1
+    400272: ValveBiped.Bip01_L_Thigh
+    400274: ValveBiped.Bip01_L_Thigh 1
+    400276: ValveBiped.Bip01_L_Toe0
+    400278: ValveBiped.Bip01_L_Toe0 1
+    400280: ValveBiped.Bip01_L_Toe0_end
+    400282: ValveBiped.Bip01_L_Toe0_end 1
+    400284: ValveBiped.Bip01_L_UpperArm
+    400286: ValveBiped.Bip01_L_UpperArm 1
+    400288: ValveBiped.Bip01_L_Wrist
+    400290: ValveBiped.Bip01_L_Wrist 1
+    400292: ValveBiped.Bip01_L_Wrist_end
+    400294: ValveBiped.Bip01_L_Wrist_end 1
+    400296: ValveBiped.Bip01_Neck1
+    400298: ValveBiped.Bip01_Neck1 1
+    400300: ValveBiped.Bip01_Pelvis
+    400302: ValveBiped.Bip01_Pelvis 1
+    400304: ValveBiped.Bip01_R_Calf
+    400306: ValveBiped.Bip01_R_Calf 1
+    400308: ValveBiped.Bip01_R_Clavicle
+    400310: ValveBiped.Bip01_R_Clavicle 1
+    400312: ValveBiped.Bip01_R_Finger0
+    400314: ValveBiped.Bip01_R_Finger0 1
+    400316: ValveBiped.Bip01_R_Finger01
+    400318: ValveBiped.Bip01_R_Finger01 1
+    400320: ValveBiped.Bip01_R_Finger02
+    400322: ValveBiped.Bip01_R_Finger02 1
+    400324: ValveBiped.Bip01_R_Finger02_end
+    400326: ValveBiped.Bip01_R_Finger02_end 1
+    400328: ValveBiped.Bip01_R_Finger1
+    400330: ValveBiped.Bip01_R_Finger1 1
+    400332: ValveBiped.Bip01_R_Finger11
+    400334: ValveBiped.Bip01_R_Finger11 1
+    400336: ValveBiped.Bip01_R_Finger12
+    400338: ValveBiped.Bip01_R_Finger12 1
+    400340: ValveBiped.Bip01_R_Finger12_end
+    400342: ValveBiped.Bip01_R_Finger12_end 1
+    400344: ValveBiped.Bip01_R_Finger2
+    400346: ValveBiped.Bip01_R_Finger2 1
+    400348: ValveBiped.Bip01_R_Finger21
+    400350: ValveBiped.Bip01_R_Finger21 1
+    400352: ValveBiped.Bip01_R_Finger22
+    400354: ValveBiped.Bip01_R_Finger22 1
+    400356: ValveBiped.Bip01_R_Finger22_end
+    400358: ValveBiped.Bip01_R_Finger22_end 1
+    400360: ValveBiped.Bip01_R_Finger3
+    400362: ValveBiped.Bip01_R_Finger3 1
+    400364: ValveBiped.Bip01_R_Finger31
+    400366: ValveBiped.Bip01_R_Finger31 1
+    400368: ValveBiped.Bip01_R_Finger32
+    400370: ValveBiped.Bip01_R_Finger32 1
+    400372: ValveBiped.Bip01_R_Finger32_end
+    400374: ValveBiped.Bip01_R_Finger32_end 1
+    400376: ValveBiped.Bip01_R_Finger4
+    400378: ValveBiped.Bip01_R_Finger4 1
+    400380: ValveBiped.Bip01_R_Finger41
+    400382: ValveBiped.Bip01_R_Finger41 1
+    400384: ValveBiped.Bip01_R_Finger42
+    400386: ValveBiped.Bip01_R_Finger42 1
+    400388: ValveBiped.Bip01_R_Finger42_end
+    400390: ValveBiped.Bip01_R_Finger42_end 1
+    400392: ValveBiped.Bip01_R_Foot
+    400394: ValveBiped.Bip01_R_Foot 1
+    400396: ValveBiped.Bip01_R_Forearm
+    400398: ValveBiped.Bip01_R_Forearm 1
+    400400: ValveBiped.Bip01_R_Hand
+    400402: ValveBiped.Bip01_R_Hand 1
+    400404: ValveBiped.Bip01_R_Thigh
+    400406: ValveBiped.Bip01_R_Thigh 1
+    400408: ValveBiped.Bip01_R_Toe0
+    400410: ValveBiped.Bip01_R_Toe0 1
+    400412: ValveBiped.Bip01_R_Toe0_end
+    400414: ValveBiped.Bip01_R_Toe0_end 1
+    400416: ValveBiped.Bip01_R_UpperArm
+    400418: ValveBiped.Bip01_R_UpperArm 1
+    400420: ValveBiped.Bip01_R_Wrist
+    400422: ValveBiped.Bip01_R_Wrist 1
+    400424: ValveBiped.Bip01_R_Wrist_end
+    400426: ValveBiped.Bip01_R_Wrist_end 1
+    400428: ValveBiped.Bip01_Spine
+    400430: ValveBiped.Bip01_Spine 1
+    400432: ValveBiped.Bip01_Spine1
+    400434: ValveBiped.Bip01_Spine1 1
+    400436: ValveBiped.Bip01_Spine2
+    400438: ValveBiped.Bip01_Spine2 1
+    400440: ValveBiped.Bip01_Spine4
+    400442: ValveBiped.Bip01_Spine4 1
+    400444: ValveBiped.forward
+    400446: ValveBiped.forward 1
+    400448: ValveBiped.forward_end
+    400450: ValveBiped.forward_end 1
+    400452: Cube.056
+    400454: Cube.057
+    400456: Cube.058
+    400458: Cube.059
+    400460: Cube.060
+    400462: Cube.061
+    400464: Cube.062
+    400466: Cube.063
+    400468: Cube.064
+    400470: Cube.065
+    400472: Cube.066
+    400474: Cube.067
+    400476: Cube.068
+    400478: Cube.069
+    400480: Cube.070
+    400482: Cube.071
+    400484: Cube.072
+    400486: Cube.073
+    2300000: Cube
+    2300002: Cube.001
+    2300004: Cube.002
+    2300006: Cube.003
+    2300008: Cube.004
+    2300010: Cube.005
+    2300012: Cube.006
+    2300014: Cube.007
+    2300016: Cube.008
+    2300018: Cube.009
+    2300020: Cube.010
+    2300022: Cube.011
+    2300024: Cube.012
+    2300026: Cube.013
+    2300028: Cube.014
+    2300030: Cube.015
+    2300032: Cube.016
+    2300034: Cube.017
+    2300036: Cube.018
+    2300038: Cube.019
+    2300040: Cube.020
+    2300042: Cube.021
+    2300044: Cube.022
+    2300046: Cube.023
+    2300048: Cube.024
+    2300050: Cube.025
+    2300052: Cube.026
+    2300054: Cube.027
+    2300056: Cube.028
+    2300058: Cube.029
+    2300060: Cube.030
+    2300062: Cube.031
+    2300064: Cube.032
+    2300066: Cube.033
+    2300068: Cube.034
+    2300070: Cube.035
+    2300072: Cube.036
+    2300074: Cube.037
+    2300076: Cube.038
+    2300078: Cube.039
+    2300080: Cube.040
+    2300082: Cube.041
+    2300084: Cube.042
+    2300086: Cube.043
+    2300088: Cube.044
+    2300090: Cube.045
+    2300092: Cube.046
+    2300094: Cube.047
+    2300096: Cube.048
+    2300098: Cube.049
+    2300100: Cube.050
+    2300102: Cube.051
+    2300104: Cube.052
+    2300106: Cube.053
+    2300108: Cube.054
+    2300110: Cube.055
+    2300112: Plane
+    2300114: Plane.001
+    2300116: Plane.002
+    2300118: Plane.003
+    2300120: Plane.004
+    2300122: Plane.005
+    2300124: Plane.006
+    2300126: Plane.007
+    2300128: Plane.008
+    2300130: Plane.009
+    2300132: Plane.010
+    2300134: Plane.011
+    2300136: Plane.012
+    2300138: Plane.013
+    2300140: Plane.014
+    2300142: Plane.015
+    2300144: Cube.056
+    2300146: Cube.057
+    2300148: Cube.058
+    2300150: Cube.059
+    2300152: Cube.060
+    2300154: Cube.061
+    2300156: Cube.062
+    2300158: Cube.063
+    2300160: Cube.064
+    2300162: Cube.065
+    2300164: Cube.066
+    2300166: Cube.067
+    2300168: Cube.068
+    2300170: Cube.069
+    2300172: Cube.070
+    2300174: Cube.071
+    2300176: Cube.072
+    2300178: Cube.073
+    3300000: Cube
+    3300002: Cube.001
+    3300004: Cube.002
+    3300006: Cube.003
+    3300008: Cube.004
+    3300010: Cube.005
+    3300012: Cube.006
+    3300014: Cube.007
+    3300016: Cube.008
+    3300018: Cube.009
+    3300020: Cube.010
+    3300022: Cube.011
+    3300024: Cube.012
+    3300026: Cube.013
+    3300028: Cube.014
+    3300030: Cube.015
+    3300032: Cube.016
+    3300034: Cube.017
+    3300036: Cube.018
+    3300038: Cube.019
+    3300040: Cube.020
+    3300042: Cube.021
+    3300044: Cube.022
+    3300046: Cube.023
+    3300048: Cube.024
+    3300050: Cube.025
+    3300052: Cube.026
+    3300054: Cube.027
+    3300056: Cube.028
+    3300058: Cube.029
+    3300060: Cube.030
+    3300062: Cube.031
+    3300064: Cube.032
+    3300066: Cube.033
+    3300068: Cube.034
+    3300070: Cube.035
+    3300072: Cube.036
+    3300074: Cube.037
+    3300076: Cube.038
+    3300078: Cube.039
+    3300080: Cube.040
+    3300082: Cube.041
+    3300084: Cube.042
+    3300086: Cube.043
+    3300088: Cube.044
+    3300090: Cube.045
+    3300092: Cube.046
+    3300094: Cube.047
+    3300096: Cube.048
+    3300098: Cube.049
+    3300100: Cube.050
+    3300102: Cube.051
+    3300104: Cube.052
+    3300106: Cube.053
+    3300108: Cube.054
+    3300110: Cube.055
+    3300112: Plane
+    3300114: Plane.001
+    3300116: Plane.002
+    3300118: Plane.003
+    3300120: Plane.004
+    3300122: Plane.005
+    3300124: Plane.006
+    3300126: Plane.007
+    3300128: Plane.008
+    3300130: Plane.009
+    3300132: Plane.010
+    3300134: Plane.011
+    3300136: Plane.012
+    3300138: Plane.013
+    3300140: Plane.014
+    3300142: Plane.015
+    3300144: Cube.056
+    3300146: Cube.057
+    3300148: Cube.058
+    3300150: Cube.059
+    3300152: Cube.060
+    3300154: Cube.061
+    3300156: Cube.062
+    3300158: Cube.063
+    3300160: Cube.064
+    3300162: Cube.065
+    3300164: Cube.066
+    3300166: Cube.067
+    3300168: Cube.068
+    3300170: Cube.069
+    3300172: Cube.070
+    3300174: Cube.071
+    3300176: Cube.072
+    3300178: Cube.073
+    4300000: Cube
+    4300002: Plane
+    4300004: Cube.001
+    4300006: Cube.002
+    4300008: Cube.003
+    4300010: Cube.004
+    4300012: Cube.005
+    4300014: Plane.001
+    4300016: Cube.006
+    4300018: Cube.007
+    4300020: Plane.002
+    4300022: Plane.003
+    4300024: Cube.008
+    4300026: Plane.004
+    4300028: Cube.009
+    4300030: Plane.005
+    4300032: Cube.010
+    4300034: Cube.011
+    4300036: Cube.012
+    4300038: Cube.013
+    4300040: Cube.014
+    4300042: Cube.015
+    4300044: Cube.016
+    4300046: Cube.017
+    4300048: Cube.018
+    4300050: Cube.019
+    4300052: Plane.006
+    4300054: Cube.020
+    4300056: Plane.007
+    4300058: Cube.021
+    4300060: Cube.022
+    4300062: Cube.024
+    4300064: Cube.025
+    4300066: Cube.026
+    4300068: Plane.008
+    4300070: Cube.027
+    4300072: Cube.028
+    4300074: Cube.029
+    4300076: Cube.030
+    4300078: Cube.031
+    4300080: Plane.009
+    4300082: Cube.032
+    4300084: Cube.033
+    4300086: Cube.034
+    4300088: Plane.010
+    4300090: Cube.035
+    4300092: Cube.036
+    4300094: Cube.037
+    4300096: Cube.038
+    4300098: Cube.039
+    4300100: Cube.023
+    4300102: Cube.040
+    4300104: Cube.041
+    4300106: Cube.042
+    4300108: Cube.043
+    4300110: Cube.044
+    4300112: Cube.045
+    4300114: Cube.046
+    4300116: Cube.048
+    4300118: Cube.047
+    4300120: Cube.050
+    4300122: Cube.049
+    4300124: Cube.052
+    4300126: Cube.051
+    4300128: Cube.053
+    4300130: Plane.011
+    4300132: Plane.012
+    4300134: Plane.013
+    4300136: Cube.054
+    4300138: Plane.014
+    4300140: Plane.015
+    4300142: Cube.055
+    4300144: Cube.068
+    4300146: Cube.067
+    4300148: Cube.066
+    4300150: Cube.065
+    4300152: Cube.064
+    4300154: Cube.063
+    4300156: Cube.062
+    4300158: Cube.061
+    4300160: Cube.060
+    4300162: Cube.059
+    4300164: Cube.058
+    4300166: Cube.057
+    4300168: Cube.056
+    4300170: Cube.070
+    4300172: Cube.069
+    4300174: Cube.071
+    4300176: Cube.072
+    4300178: Cube.073
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

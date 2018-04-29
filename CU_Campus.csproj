@@ -91,6 +91,7 @@
     <Compile Include="Assets\Custom\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Custom\Scripts\SimpleSmoothMouseLook.cs" />
     <Compile Include="Assets\Custom\Scripts\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Custom\Scripts\Teleport.cs" />
     <Compile Include="Assets\Custom\Scripts\textToBook.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\Scripts\Camera\vThirdPersonCamera.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\Scripts\CharacterController\vThirdPersonAnimator.cs" />
