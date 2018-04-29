@@ -1,122 +1,76 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Neo4j.Driver.V1;
 
-public class CreateBooksOnShelves : MonoBehaviour {
-
-    public const int TOTAL_BOOKS_PER_FLOOR = 780;
-    public GameObject book;
-    public GameObject player;
-    public GameObject floor;
-    private List<Floor> floors = new List<Floor>();
-
-    private class Book
+namespace CULibrary
+{
+    public class CreateBooksOnShelves : MonoBehaviour
     {
-        private string name;
-        private string url;
-        
-    }
+        public GameObject baseBookGameObject;
+        public GameObject basePlayerGameObject;
+        public GameObject baseEvenFloorGameObject;
+        public GameObject baseOddFloorGameObject;
 
-    private class Bookshelf
-    {
-        private enum Direction
+        private List<Floor> floors = new List<Floor>();
+        private List<Book> books = new List<Book>();
+
+        private IDriver _driver;
+
+        // Use this for initialization
+        void Start()
         {
-            NORTH, SOUTH, EAST, WEST
-        };
+            // set base game object references
+            Floor.baseEvenFloorGameObject = baseEvenFloorGameObject;
+            Floor.baseOddFloorGameObject = baseOddFloorGameObject;
+            Book.baseBookGameObject = baseBookGameObject;
 
-        private double pos_x;
-        private double pos_y;
-        private Direction direction;
+            // update player 
+            resetPlayerPosition();
 
-        private Bookshelf(double pos_x, double pos_y, Direction direction)
-        {
-            this.pos_x = pos_x;
-            this.pos_y = pos_y;
-            this.direction = direction;
-        }
-    }
+            // generate book list
+            // TODO: update this to read in from static files or from Neo4j driver
+            _driver = GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "password"));
 
-    private class Floor
-    {
-        public const float FLOOR_HEIGHT = 3.751f;
-
-        private float pos_y;
-        private bool isEven;
-        private GameObject floorObj;
-        private Bookshelf[] bookshelves = new Bookshelf[6];
-
-        public Floor(float pos_y, bool isEven, string floorName)
-        {
-            this.pos_y = pos_y;
-            this.isEven = isEven;
-            this.floorObj = GameObject.Find(floorName);
-
-            // TODO: initialize bookshelf objects
-        }
-    }
-
-    // Use this for initialization
-    void Start () { 
-        int i = 0;
-
-
-        //Update player 
-        resetPlayerPosition();
-        //fillLibrary();
-        createFloors(1000);
-
-
-
-	}
-	
-	// Update is called once per frame
-    void resetPlayerPosition()
-    {
-        player.transform.position = new Vector3(0, 1.5f, 0);
-    }
-
-    void fillLibrary()
-    {
-        for (int i = 0; i <= TOTAL_BOOKS_PER_FLOOR; i++)
-        {
-            //book.name = "this_is_book_" + i;
-            //Instantiate(book);
-            //book.transform.position = new Vector3(0, 10, 0);
-        }
-    }
-
-    void createFloors(int books)
-    {
-        // compute number of floors given results size 
-        int numFloors = books / TOTAL_BOOKS_PER_FLOOR;
-        if (books % TOTAL_BOOKS_PER_FLOOR != 0)
-        {
-            numFloors++;
-        }
-
-        Debug.Log(numFloors);
-
-        // create floor instances
-        bool isEven;
-        for(int i=numFloors; i>0; i--)
-        {
-            if (i % 2 == 0)
+            for (int i = 0; i < 4000; i++)
             {
-                isEven = true;
-                Instantiate(floor);
-            }
-            else
-            {
-                isEven = false;
-                Instantiate(floor);
+                books.Add(new Book("History", "Apollo 11", "Apollo 11", "https://en.wikipedia.org/wiki/Apollo_11"));
             }
 
-            floor.name = "floor_" + i;
-            floor.transform.position = new Vector3(0, (i - 1) * Floor.FLOOR_HEIGHT, 0);
-            floor.transform.localScale = new Vector3(0.125f, 0.125f, 0.125f);
+            // create library based on book list
+            createLibrary();
+        }
 
-            floors.Add(new Floor(i * Floor.FLOOR_HEIGHT, isEven, floor.name));
+        // Update is called once per frame
+        void resetPlayerPosition()
+        {
+            basePlayerGameObject.transform.position = new Vector3(0, 2.0f, 0);
+        }
+
+        void createLibrary()
+        {
+            // compute number of additional floors given results size 
+            int numFloors = books.Count / Constants.TOTAL_BOOKS_PER_FLOOR;
+            if (books.Count % Constants.TOTAL_BOOKS_PER_FLOOR != 0)
+            {
+                numFloors++;
+            }
+
+            // create floor instances
+            int startIndex;
+            int endIndex = 0;
+            for (int i = 0; i < numFloors; i++)
+            {
+                startIndex = endIndex;
+                if (startIndex + Constants.TOTAL_BOOKS_PER_FLOOR >= books.Count)
+                    endIndex = books.Count;
+                else
+                    endIndex = startIndex + Constants.TOTAL_BOOKS_PER_FLOOR;
+
+                floors.Add(new Floor(i,
+                                     books.GetRange(startIndex,
+                                                    endIndex - startIndex)));
+            }
         }
     }
-
 }

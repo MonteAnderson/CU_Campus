@@ -3,8 +3,12 @@ guid: 5a5b631407cf67a42ba83cc9a41bbefe
 timeCreated: 1524447193
 licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - book: {fileID: 100000, guid: f43895422c5b6cc46bd4dee3435e38f1, type: 3}
+  - player: {fileID: 100002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+  - floor: {fileID: 100008, guid: 2581ffda4d1db6c41aa97a52b40f58e4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
