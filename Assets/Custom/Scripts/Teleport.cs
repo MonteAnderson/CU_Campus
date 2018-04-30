@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour {
 
-    public GameObject player;
-    public GameObject teleport_library;
+    public GameObject player_vr;
+    public GameObject player_fps;
+    public GameObject teleport_destination;
 
 	// Use this for initialization
 	void Start () {
@@ -14,16 +15,13 @@ public class Teleport : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("TELE");
-        if (col.name == "Player")
-        {
-            player.transform.position = teleport_library.transform.position;
-            Debug.Log("TELE2");
-        }
+        player_fps.transform.position = teleport_destination.transform.position;
+        player_vr.transform.position = teleport_destination.transform.position;
+        //Debug.Log("TELE2");
     }
 }

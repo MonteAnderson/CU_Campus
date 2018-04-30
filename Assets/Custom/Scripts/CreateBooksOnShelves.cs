@@ -14,9 +14,18 @@ namespace CULibrary
         private List<Floor> floors = new List<Floor>();
         private List<Book> books = new List<Book>();
 
+        public Material Material_Book_White;
+        public Material Material_Book_Red;
+
+        //public TextMesh bookText;
+
         // Use this for initialization
         void Start()
         {
+            TextAsset databaseData = Resources.Load<TextAsset>("database");
+            string[] data = databaseData.text.Split(new char[] { '\n' });
+
+            //Debug.Log(data.Length);
             // set base game object references
             Floor.baseMainFloorGameObject = baseMainFloorGameObject;
             Floor.baseUpperFloorGameObject = baseUpperFloorGameObject;
@@ -26,11 +35,29 @@ namespace CULibrary
             resetPlayerPosition();
 
             // generate book list
-            for (int i = 0; i < 4000; i++)
+            for (int i = 0; i < 1000; i++)
             {
-                books.Add(new Book("History", "Apollo 11", "Apollo 11", "https://en.wikipedia.org/wiki/Apollo_11"));
-
+                string bookName = "";
+                string bookURL = "";
+                string bookCategory = "";
+                //books.Add(new Book("History", "Apollo 11", "Apollo 11", "https://en.wikipedia.org/wiki/Apollo_11"));
+                for (int j = 0; j < data.Length; j++)
+                {
+                    string[] row = data[j].Split(new char[] { ',' });
+                    bookCategory = row[0];
+                    bookName = row[1];
+                    bookURL = row[2];
+                    //bookText.text = bookName;
+                    Debug.Log(bookName);
+                    Debug.Log("Category: " + bookCategory + " | Name: " + bookName + " | URL: " + bookURL);
+                    books.Add(new Book(bookCategory, bookName, bookName, bookURL));
+                }
+                //Debug.Log(data[i]);
+                //books.Add(new Book(data[i], bookName, bookName, bookURL));
+                //books.Add(new Book(bookCategory, bookName, bookName, bookURL));
             }
+            
+
 
             // create library based on book list
             createLibrary();

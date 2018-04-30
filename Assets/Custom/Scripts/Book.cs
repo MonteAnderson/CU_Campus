@@ -8,11 +8,11 @@ namespace CULibrary
         public static GameObject baseBookGameObject;
         private static int totalBookCount = 0;
 
-        private string rootCategory;
-        private string parentCategory;
-        private string name;
-        private string url;
-        private GameObject bookObjRef;
+        public string rootCategory;
+        public string parentCategory;
+        public string name;
+        public string url;
+        public GameObject bookObjRef;
 
         public Book(string rootCategory, string parentCategory, string name, string url)
         {
@@ -30,7 +30,7 @@ namespace CULibrary
             this.bookObjRef.transform.localScale = new Vector3(2f, 2f, 2f);
 
             totalBookCount++;
-            this.bookObjRef.name = this.name + "~" + this.url;
+            this.bookObjRef.name = this.rootCategory + "~" + this.name + "~" + this.url;
         }
     }
 }

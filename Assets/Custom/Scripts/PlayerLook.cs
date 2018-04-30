@@ -8,11 +8,21 @@ public class PlayerLook : MonoBehaviour {
     public GameObject player;
     public string bookURL;
     public GameObject currentLookAtGameObject;
+
     public TextMesh playerCanvasText;
+    //public TextMesh bookSideText;
 
     // Use this for initialization
     void Start () {
+        GameObject[] bookList = GameObject.FindGameObjectsWithTag("Book");
 
+        foreach (GameObject book in bookList)
+        {
+            string[] bookData = book.name.Split('~');
+            book.GetComponent<TextMesh>().text = bookData[0];
+            //bookSideText.text = bookData[0];
+        }
+        
     }
 	
 	// Update is called once per frame
@@ -39,11 +49,11 @@ public class PlayerLook : MonoBehaviour {
 
             currentLookAtGameObject = hit.transform.gameObject;
             string[] bookData = currentLookAtGameObject.name.Split('~');
-            currentLookAtGameObject.GetComponent<textToBook>.
-            playerCanvasText.text = bookData[0];
+            //currentLookAtGameObject.GetComponent<textToBook>.
+            playerCanvasText.text = bookData[1];
             if ((Input.GetKeyDown(KeyCode.E)) || (OVRInput.Get(OVRInput.Button.Two)))
             {
-                Application.OpenURL(bookData[1]);
+                Application.OpenURL(bookData[2]);
             }
             //bookURL = currentLookAtGameObject.GetComponent<PlayerLook>().bookURL;
             //Debug.Log(bookURL);

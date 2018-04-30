@@ -7,26 +7,56 @@ public class textToBook : MonoBehaviour {
     public TextMesh book_title;
     public TextAsset book_content;
     public string book_name;
-    public string book_url;
+    //public string book_url;
     public string book_category;
     public Color book_color;
     public GameObject book;
     Material book_mat;
-
+    Material m_Material;
 
     private int i = 0;
 
 	// Use this for initialization
 	void Start () {
-        book_title.text = book_name;
-        book_mat = GetComponent<Renderer>().material;
+        m_Material = GetComponent<Renderer>().material;
+
+        string[] bookData = book.name.Split('~');
+        book_title.text = bookData[1];
+        book_category = bookData[0];
+
+        if (book_category == "science")
+        {
+            m_Material.color = Color.blue;
+        }
+
+        if (book_category == "history")
+        {
+            m_Material.color = Color.red;
+        }
+
+        if (book_category == "math")
+        {
+            m_Material.color = Color.green;
+        }
+
+        if (book_category == "art")
+        {
+            m_Material.color = Color.yellow;
+        }
+
+        if (book_category == "language")
+        {
+            m_Material.color = Color.cyan;
+        }
+
+        //book_mat = GetComponent<Renderer>().material;
         //book_title.text = book_content.name;
         //book_url = book_content.text;
 
-        if (book_category == "nature")
+        /*if (book_category == "nature")
         {
             book_mat.color = Color.red;
-        }
+        }*/
 
         /*
         if ((book_content.name.Length >= 18) && (i <= 18))

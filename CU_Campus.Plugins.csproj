@@ -176,7 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Custom\3DText.shader" />
-    <None Include="Assets\Custom\Text Files\test_book_1.txt" />
+    <None Include="Assets\Custom\Files\test_book_1.txt" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\README_Basic.txt" />
     <None Include="Assets\LICENSE.txt" />
     <None Include="Assets\MicroSplat\Core\Examples\Scene\MicroSplatData\MicroSplat.shader" />

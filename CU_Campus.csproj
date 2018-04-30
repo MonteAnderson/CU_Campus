@@ -87,7 +87,9 @@
     <Compile Include="Assets\Custom\Scripts\AIWalking.cs" />
     <Compile Include="Assets\Custom\Scripts\Book.cs" />
     <Compile Include="Assets\Custom\Scripts\Bookshelf.cs" />
+    <Compile Include="Assets\Custom\Scripts\ColorCode.cs" />
     <Compile Include="Assets\Custom\Scripts\Constants.cs" />
+    <Compile Include="Assets\Custom\Scripts\ControlSelection.cs" />
     <Compile Include="Assets\Custom\Scripts\CreateBooksOnShelves.cs" />
     <Compile Include="Assets\Custom\Scripts\DisplayTextOnScreen.cs" />
     <Compile Include="Assets\Custom\Scripts\FirstPersonController_MouseAndKeyboard.cs" />
@@ -352,7 +354,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Custom\3DText.shader" />
-    <None Include="Assets\Custom\Text Files\test_book_1.txt" />
+    <None Include="Assets\Custom\Files\test_book_1.txt" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion LITE\README_Basic.txt" />
     <None Include="Assets\LICENSE.txt" />
     <None Include="Assets\MicroSplat\Core\Examples\Scene\MicroSplatData\MicroSplat.shader" />
