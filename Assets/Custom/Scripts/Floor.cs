@@ -34,7 +34,7 @@ namespace CULibrary
             {
                 this.floorObj = UnityEngine.Object.Instantiate(baseUpperFloorGameObject);
             }
-
+            
             this.floorObj.name = "floor_" + (floorIndex + 1);
             this.floorObj.transform.position = new Vector3(0, floorIndex * Floor.FLOOR_HEIGHT, 0);
             this.floorObj.transform.localScale = new Vector3(0.125f, 0.125f, 0.125f);

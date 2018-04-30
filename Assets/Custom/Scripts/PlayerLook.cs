@@ -38,10 +38,12 @@ public class PlayerLook : MonoBehaviour {
             Debug.Log(bookURL);
 
             currentLookAtGameObject = hit.transform.gameObject;
-            playerCanvasText.text = "Interact to read '" + currentLookAtGameObject.GetComponent<textToBook>().book_name + "'";
+            string[] bookData = currentLookAtGameObject.name.Split('~');
+
+            playerCanvasText.text = bookData[0];
             if ((Input.GetKeyDown(KeyCode.E)) || (OVRInput.Get(OVRInput.Button.Two)))
             {
-                Application.OpenURL(currentLookAtGameObject.GetComponent<textToBook>().book_url);
+                Application.OpenURL(bookData[1]);
             }
             //bookURL = currentLookAtGameObject.GetComponent<PlayerLook>().bookURL;
             //Debug.Log(bookURL);

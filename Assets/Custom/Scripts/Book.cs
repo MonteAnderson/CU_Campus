@@ -6,6 +6,7 @@ namespace CULibrary
     public class Book
     {
         public static GameObject baseBookGameObject;
+        private static int totalBookCount = 0;
 
         private string rootCategory;
         private string parentCategory;
@@ -21,9 +22,15 @@ namespace CULibrary
             this.url = url;
         }
 
-        public void intialize(float pos_x, float pos_y, float pos_z)
+        public void initialize(Vector3 position, Vector3 rotation)
         {
-            this.bookObjRef = UnityEngine.Object.Instantiate(baseBookGameObject);
+            Quaternion quaternion = Quaternion.Euler(rotation.x, rotation.y, rotation.z);
+
+            this.bookObjRef = UnityEngine.Object.Instantiate(baseBookGameObject, position, quaternion);
+            this.bookObjRef.transform.localScale = new Vector3(2f, 2f, 2f);
+
+            totalBookCount++;
+            this.bookObjRef.name = this.name + "~" + this.url;
         }
     }
 }

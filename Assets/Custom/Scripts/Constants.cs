@@ -10,5 +10,6 @@ namespace CULibrary
         public const int TOTAL_COLUMNS_PER_BOOKSHELF = 4;
         public const int TOTAL_ROWS_PER_BOOKSHELF = 3;
         public const int TOTAL_BOOKS_PER_ROW = 10;
+        public const int TOTAL_BOOKS_PER_COLUMN = 30;
     }
 }
