@@ -35,7 +35,7 @@ namespace CULibrary
             resetPlayerPosition();
 
             // generate book list
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 50; i++)
             {
                 string bookName = "";
                 string bookURL = "";

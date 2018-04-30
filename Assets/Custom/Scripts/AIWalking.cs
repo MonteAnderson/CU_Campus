@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class AIWalking : MonoBehaviour
 {
-    public Transform NPC_destination_1;
-    public Transform NPC_destination_2;
-    
+
 
     // Use this for initialization
     void Start()
@@ -19,16 +17,6 @@ public class AIWalking : MonoBehaviour
     void Update()
     {
         
-        if (transform.position == NPC_destination_1.transform.position)
-        {
-            transform.GetComponent<NavMeshAgent>().destination = NPC_destination_2.position;
-        }
-
-        if (transform.position == NPC_destination_2.transform.position)
-        {
-            transform.GetComponent<NavMeshAgent>().destination = NPC_destination_1.position;
-        }
-
         /*if (transform.position == NPC_destination_1.transform.position)
         {
             transform.GetComponent<NavMeshAgent>().destination = NPC_destination_2.position;
