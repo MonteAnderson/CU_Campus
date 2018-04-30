@@ -39,7 +39,7 @@ public class PlayerLook : MonoBehaviour {
 
             currentLookAtGameObject = hit.transform.gameObject;
             string[] bookData = currentLookAtGameObject.name.Split('~');
-
+            currentLookAtGameObject.GetComponent<textToBook>.
             playerCanvasText.text = bookData[0];
             if ((Input.GetKeyDown(KeyCode.E)) || (OVRInput.Get(OVRInput.Button.Two)))
             {
