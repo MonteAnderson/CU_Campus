@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour {
 
+    public GameObject player;
     public string bookURL;
     public GameObject currentLookAtGameObject;
     public TextMesh playerCanvasText;
@@ -38,7 +39,10 @@ public class PlayerLook : MonoBehaviour {
 
             currentLookAtGameObject = hit.transform.gameObject;
             playerCanvasText.text = "Interact to read '" + currentLookAtGameObject.GetComponent<textToBook>().book_name + "'";
-
+            if ((Input.GetKeyDown(KeyCode.E)) || (OVRInput.Get(OVRInput.Button.Two)))
+            {
+                Application.OpenURL(currentLookAtGameObject.GetComponent<textToBook>().book_url);
+            }
             //bookURL = currentLookAtGameObject.GetComponent<PlayerLook>().bookURL;
             //Debug.Log(bookURL);
 
@@ -51,11 +55,12 @@ public class PlayerLook : MonoBehaviour {
             //Debug.Log("Did not Hit");
         }
 
-        if ((Input.GetKeyDown(KeyCode.E)) || (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger)))
-        {
-            Application.OpenURL(currentLookAtGameObject.GetComponent<textToBook>().book_url);
-        }
 
+
+        if ((Input.GetKeyDown(KeyCode.R)) || OVRInput.Get(OVRInput.Button.One))
+        {
+            player.transform.position = new Vector3(0, 1, 0);
+        }
 
         //Debug.Log(hit.transform.tag);
     }

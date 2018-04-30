@@ -112,6 +112,26 @@ ModelImporter:
     4300036: Cube_013
     4300038: Cube_014
     4300040: Cube_004
+    6400000: Cube_001
+    6400002: Cube_003
+    6400004: Cube_004
+    6400006: Cube_005
+    6400008: Cube_006
+    6400010: Cube_008
+    6400012: Cube_009
+    6400014: Cube_010
+    6400016: Cube_011
+    6400018: Cube_012
+    6400020: Cube_013
+    6400022: Cube_014
+    6400024: Cube_015
+    6400026: Cube_016
+    6400028: Cube_017
+    6400030: Cube_018
+    6400032: Cube_019
+    6400034: Cube_020
+    6400036: Cube_021
+    6400038: Cube_023
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -142,7 +162,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

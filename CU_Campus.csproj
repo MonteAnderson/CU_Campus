@@ -85,9 +85,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Custom\Scripts\AIWalking.cs" />
+    <Compile Include="Assets\Custom\Scripts\Book.cs" />
+    <Compile Include="Assets\Custom\Scripts\Bookshelf.cs" />
+    <Compile Include="Assets\Custom\Scripts\Constants.cs" />
     <Compile Include="Assets\Custom\Scripts\CreateBooksOnShelves.cs" />
     <Compile Include="Assets\Custom\Scripts\DisplayTextOnScreen.cs" />
     <Compile Include="Assets\Custom\Scripts\FirstPersonController_MouseAndKeyboard.cs" />
+    <Compile Include="Assets\Custom\Scripts\Floor.cs" />
+    <Compile Include="Assets\Custom\Scripts\LookAtPlayer.cs" />
     <Compile Include="Assets\Custom\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Custom\Scripts\SimpleSmoothMouseLook.cs" />
     <Compile Include="Assets\Custom\Scripts\SmoothMouseLook.cs" />
