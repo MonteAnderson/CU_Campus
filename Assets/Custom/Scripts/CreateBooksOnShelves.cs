@@ -22,7 +22,7 @@ namespace CULibrary
         // Use this for initialization
         void Start()
         {
-            TextAsset databaseData = Resources.Load<TextAsset>("database");
+            TextAsset databaseData = Resources.Load<TextAsset>("database_small");
             string[] data = databaseData.text.Split(new char[] { '\n' });
 
             //Debug.Log(data.Length);
@@ -35,7 +35,7 @@ namespace CULibrary
             resetPlayerPosition();
 
             // generate book list
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 1; i++)
             {
                 string bookName = "";
                 string bookURL = "";
