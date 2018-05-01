@@ -6,7 +6,7 @@ public class LookAtPlayer : MonoBehaviour {
 
     public GameObject thisObject;
     public GameObject player_vr;
-    public GameObject player_fps;
+    //public GameObject player_fps;
 
     // Use this for initialization
     void Start () {
@@ -17,6 +17,6 @@ public class LookAtPlayer : MonoBehaviour {
 	void Update () {
         //thisObject.transform.LookAt(player.transform.position);
         thisObject.transform.rotation = Quaternion.LookRotation(thisObject.transform.position - player_vr.transform.position);
-        thisObject.transform.rotation = Quaternion.LookRotation(thisObject.transform.position - player_fps.transform.position);
+        //thisObject.transform.rotation = Quaternion.LookRotation(thisObject.transform.position - player_fps.transform.position);
     }
 }

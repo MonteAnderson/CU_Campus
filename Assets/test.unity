@@ -526,8 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObject: {fileID: 122009380}
-  player_vr: {fileID: 2104545403}
-  player_fps: {fileID: 2131776005}
+  player_vr: {fileID: 2131776005}
 --- !u!1 &19533557
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,8 +3313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObject: {fileID: 1283610692}
-  player_vr: {fileID: 2104545403}
-  player_fps: {fileID: 2131776005}
+  player_vr: {fileID: 2131776005}
 --- !u!1 &297442845
 GameObject:
   m_ObjectHideFlags: 0
@@ -8894,7 +8892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &678732954
 Transform:
   m_ObjectHideFlags: 0
@@ -10084,8 +10082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1b265ddeaca2c40872890fd152ff1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_vr: {fileID: 2104545403}
-  player_fps: {fileID: 2131776005}
+  player_vr: {fileID: 2131776005}
   teleport_destination: {fileID: 1677261475}
 --- !u!1 &797666043
 GameObject:
@@ -14349,6 +14346,22 @@ Prefab:
       propertyPath: HmdRotatesY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462408, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493974, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_IsPrefabParent: 0
@@ -16733,8 +16746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1b265ddeaca2c40872890fd152ff1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_vr: {fileID: 2104545403}
-  player_fps: {fileID: 2131776005}
+  player_vr: {fileID: 2131776005}
   teleport_destination: {fileID: 1789929834}
 --- !u!23 &1283136368
 MeshRenderer:
@@ -24584,7 +24596,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player_VR: {fileID: 2104545403}
-  Player_FPS: {fileID: 2131776005}
 --- !u!1 &1832764647
 GameObject:
   m_ObjectHideFlags: 0
@@ -26462,8 +26473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1b265ddeaca2c40872890fd152ff1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_vr: {fileID: 2104545403}
-  player_fps: {fileID: 2131776005}
+  player_vr: {fileID: 2131776005}
   teleport_destination: {fileID: 1550234826}
 --- !u!23 &1969444562
 MeshRenderer:

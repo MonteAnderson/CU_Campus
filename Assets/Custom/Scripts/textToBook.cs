@@ -24,31 +24,35 @@ public class textToBook : MonoBehaviour {
         book_title.text = bookData[1];
         book_category = bookData[0];
 
-        if (book_category == "science")
+        if (book_category == "Health")
         {
             m_Material.color = Color.blue;
         }
 
-        if (book_category == "history")
+        if (book_category == "History")
         {
             m_Material.color = Color.red;
         }
 
-        if (book_category == "math")
+        if (book_category == "Geography")
         {
             m_Material.color = Color.green;
         }
 
-        if (book_category == "art")
+        if (book_category == "Events")
         {
             m_Material.color = Color.yellow;
         }
 
-        if (book_category == "language")
+        if (book_category == "Culture")
         {
             m_Material.color = Color.cyan;
         }
-
+        if (book_category == "Arts")
+        {
+            m_Material.color = Color.black;
+        }
+        
         //book_mat = GetComponent<Renderer>().material;
         //book_title.text = book_content.name;
         //book_url = book_content.text;

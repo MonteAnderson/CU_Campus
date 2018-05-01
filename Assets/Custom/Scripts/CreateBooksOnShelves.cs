@@ -66,7 +66,7 @@ namespace CULibrary
         // Update is called once per frame
         void resetPlayerPosition()
         {
-            basePlayerGameObject.transform.position = new Vector3(0, 2.0f, 0);
+            //basePlayerGameObject.transform.position = new Vector3(0, 2.0f, 0);
         }
 
         void createLibrary()
