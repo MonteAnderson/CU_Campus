@@ -8,8 +8,8 @@ You can also download the entire repository and build it within Unity.
 Used Unity as the engine and built most assets using Blender, but some were used from Turbosquid, which have Royalty Free Licenses.
 
 
-Controls (Keyboard)-
 
+Controls (Keyboard)-
 
 W - Forward
 
@@ -22,6 +22,8 @@ D - Right
 E - Interact
 
 R - Reset Player Position
+
+
 
 Controls (Oculus VR)-
 
